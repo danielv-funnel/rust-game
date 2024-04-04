@@ -1,9 +1,9 @@
-fn main() {
-    println!("Hello, world!");
+use macroquad::prelude::*;
 
-    another_function();
-}
-
-fn another_function() {
-    println!("Another function.");
+#[macroquad::main("Daniels spel")]
+async fn main() {
+    loop {
+        clear_background(BLACK);
+        next_frame().await
+    }
 }
